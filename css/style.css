@@ -1,0 +1,198 @@
+*{
+	margin: 0px;
+}
+body{
+	background: #2B2B2B;
+	font-family: Tahoma, Arial, Helvetica;
+	margin: 0px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 300;
+    background-image: url(../img/logo_gdg.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 45px;
+    height: 100%;
+    line-height: 46px;
+    width: 350px;
+    position: relative;
+   
+    color: #666;
+}
+
+
+.bar_top {
+    width: 100%;
+    height: 42px;
+    background: #fff;
+    border-bottom: 1px solid #BDBDBD;
+}
+.wrap_head {
+    width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap_nav {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrap_nav ul li {
+    list-style: none;
+    overflow: hidden;
+    float: left;
+}
+.wrap_nav ul li a {
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 8px;
+    height:100%;
+}
+.wrap_nav ul li a:hover {
+    background: #0070BB;
+}
+.primary_nav {
+    float: right;
+    background: #0075bf;
+}
+.left_nav {
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: -40px;
+    background-image: url(../img/left_nav_bg.png);
+    background-repeat: no-repeat;
+}
+.right_nav {
+    display: block;
+    width: 48px;
+    height: 40px;
+    float: right;
+    margin-right: -48px;
+    background-image: url(../img/right_nav_bg.png);
+    background-repeat: no-repeat;
+}
+.primary_nav ul {
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    float: left;
+    /*box-shadow: -1px 8px 10px 1px rgba(0, 0, 0, 0.15), inset 0px -20px 10px -10px rgba(0, 214, 255, 0.15);*/
+
+}
+.int_right {
+    background-image: url(../img/int_right.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    width: 70px;
+    height: 42px;
+    float: right;
+    position: absolute;
+    right: 89px;
+    top: 0;
+}
+.int_left {
+    background-image: url(../img/int_left.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    width: 70px;
+    height: 42px;
+    float: right;
+    position: absolute;
+    right: 184px;
+    top: 0;
+}
+
+
+.left_portada {
+    float: left;
+    background-image: url(../img/logo_gbg_gday.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 558px;
+    width: 398px;
+    margin-top: 30px;
+    }
+
+
+ /*My*/
+
+#con-texto img{
+	position: absolute;
+	top: 13%;
+	left: 8%;
+}
+
+.contenedor{
+	margin: 0px auto;
+	width: 80%;
+	height: 559px;
+	position: relative;
+	top: 43px;
+}
+.cont{
+	margin: 5px -4px 0px 6px;
+	padding-top: 100px;
+	width: 49%;
+	/*border: 1px solid red;*/
+	height: 80%;
+	display: inline-block;
+}
+footer{
+	background: #009245;
+	text-align: right;
+	position: absolute;
+	bottom: 0px;
+	height: 80px;
+	width: 100%;
+}
+
+footer .bt_Registrate{
+	background: #F8BC00;
+	border-radius: 3px;
+	box-shadow: inset 0 40px 24px -24px #FFE000;
+	font-size: 22px;
+	/*font-weight: bold;*/
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	top: 15px;
+	left: 53%;
+	text-shadow: 0 1px 0 #FFF738;
+	text-align: center;
+	width: 180px;
+}
+
+@media screen and (max-width:1365px){
+	.contenedor{
+		height: 639px;
+	}
+	.cont{
+	margin: 15px -4px 0px 5px;
+	}
+	.int_right{
+    right: 65px;
+    }
+    .int_left{
+    right: 78px;
+    }
+    #con-texto img{
+	top: 15%;
+	left: 1%;
+	}
+}
