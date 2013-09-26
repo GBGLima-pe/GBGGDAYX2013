@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
 	<title>GDAYX</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/navigator.js"></script>
+	<script src="js/navegador.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -21,24 +21,93 @@
 			<nav class="primary_nav" id="nav">
 				<div class="left_nav"></div>
 				<ul>
-					<li><a href="#inicio">Presentaci&oacute;n</a></li>
-					<li><a href="#schedule">Agenda</a></li>
-					<li><a href="#speakers">Speakers</a></li>
-					<li><a href="#sponsors">Lugar</a></li>
-					<li><a href="#travel">Registrate</a></li>
-					<li><a href="#travel">Registrate</a></li>
+					<li><a href="#presentacion" id="pres">Presentaci&oacute;n</a></li>
+					<li><a href="#agenda" id="age">Agenda</a></li>
+					<li><a href="#speakers" id="spk">Speakers</a></li>
+					<li><a href="#sponsors" id="spo">Sponsor</a></li>
+					<li><a href="#lugar" id="lug">Lugar</a></li>
+					<li><a href="#registrate" id="reg">Registrate</a></li>
 				</ul>
 				<div class="right_nav"></div>
 			</nav>
 		</div>
 	</header>
 	<section class="contenedor">
-		<section class="cont" id="con-texto">
+		<!--PRESENTACION-->
+		<section class="cont" id="pres-izquierda">
 			<img src="img/logo_gbg_gday.png" />
 		</section>
-		<section class="cont" id="con-imagenes">
-
+		<section class="cont" id="pres-derecha"> 
+			<div class="fecha">
+					<div class="dias">16-18</div>
+					<div class="mes">Noviembre</div>
+			</div>
+			<div class="title">GBG GDAY<span>2013</span>
+				<div class="line"></div>
+			</div>
+			<div class="description">
+				<p>
+					El segmento Google for Business, está orientado a empresas, instituciones y agencias que mediante experiencias podrán compartir las mejores prácticas para realizar negocios utilizando productos de Google.
+				</p>
+			</div>
 		</section>
+		<!--AGENDA-->
+		<section class="cont" id="age-izquierda" style="border:1px solid blue;"><div>este es el lado izquierdo </div></section>
+		<section class="cont" id="age-derecha" style="border:1px solid blue;"><div>este es el lado derecho</div></section>
+		<!--SPEAKER-->
+		<section class="cont" id="spk-izquierda">
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+		</div></section>
+		<section class="cont" id="spk-derecha">
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/112349624378351893742/posts" target="_blank"><img src="img/speaker1.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+			<article class="speaker">
+				<a href="https://plus.google.com/u/0/106058445157994257907/posts" target="_blank"><img src="img/speaker2.jpg" /></a>
+				<label>Nombre del Speaker</label>
+				<aside>Compañia del Speaker</aside>
+			</article>
+		</section>
+		<!--SPONSORS-->
+		<section class="cont" id="spo-izquierda" style="border:1px solid yellow;"><div>este es el lado izquierdo </div></section>
+		<section class="cont" id="spo-derecha" style="border:1px solid yellow;"><div>este es el lado derecho</div></section>
+		<!--LUGAR-->
+		<section class="cont" id="lug-izquierda" style="border:1px solid white;"><div>este es el lado izquierdo </div></section>
+		<section class="cont" id="lug-derecha" style="border:1px solid white;"><div>este es el lado derecho</div></section>
+		<!--REGISTRATE-->
+		<section class="cont" id="reg-izquierda" style="border:1px solid red;"><div>este es el lado izquierdo </div></section>
+		<section class="cont" id="reg-derecha" style="border:1px solid red;"><div>este es el lado derecho</div></section>
 	</section>
 	<footer>
 		<div class="bt_Registrate">Registrate</div>
