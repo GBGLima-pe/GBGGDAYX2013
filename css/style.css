@@ -38,7 +38,7 @@ header {
     border-bottom: 1px solid #BDBDBD;
 }
 .wrap_head {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
     height: 100%;
     overflow: hidden;
@@ -103,7 +103,7 @@ header {
     height: 42px;
     float: right;
     position: absolute;
-    right: 0px;
+    right: -50px;
     top: 0;
 }
 .int_left {
@@ -121,7 +121,8 @@ header {
 
 .left_portada {
     float: left;
-    background-image: url(../img/logo_gbg_gday.png);
+    /*background-image: url(../img/logo_gbg_gday.png);*/
+    background-image: url(../img/logo_gdg_devfest.png);
     background-repeat: no-repeat;
     background-position: center right;
     height: 558px;
@@ -157,7 +158,6 @@ header {
 }
 #pres-derecha{
     left: 50%;
-    /*top: 45px; */
     top: 100%;
 }
 #pres-derecha .fecha {
@@ -186,7 +186,7 @@ header {
     font-weight: 600;
     line-height: 45px;
     position: absolute;
-    right: 25%;
+    right: 30%;
     top: 21%;
     width: 300px;
 }
@@ -210,22 +210,73 @@ header {
     font-size: 17px;
     font-weight: 300;
     position: absolute;
-    right: 25%;
-    top: 54%;
+    right: 30%;
+    top: 50%;
     width: 300px;
 }
  /*AGENDA*/
 #age-izquierda {
     top: -100%;
 }
-#age-izquierda img{
-    left: 9%;
-    position: absolute;
-    top: 10%; 
-}
 #age-derecha{
     left: 50%;
     top: 100%; 
+}
+#age-mid{
+    height: 0%; 
+    margin: 0px auto; 
+    opacity: 0; 
+    overflow: scroll;
+    position: relative; 
+    font-family: Arial;
+    top:45%; 
+    width: 100%;
+}
+#age-mid .hora{
+    background: #db4437 !important;
+    color: #fff;
+    display: inline-block;
+    height: 70px;
+    width: 15%;
+    margin: 0px 0px 5px 28px;
+    
+}
+#age-mid .aula{ 
+    background: #fff !important;
+    display: inline-block;
+    height: 200px;
+    width: 27%; 
+    margin: 0px 0px 5px 0px;
+}
+#age-mid .general{ 
+    background: #fff !important;
+    display: inline-block;
+    height: 70px;
+    margin: 0px 0px 5px 0px;
+    width: 81.7%; 
+}
+
+#age-mid .hora .hour{
+    font-size: 16px;
+    text-align: center;  
+    margin-top: 39px;  
+}
+#age-mid .aula .titulo, #age-mid .general .titulo{
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;    
+}
+#age-mid .aula .descripcion, #age-mid .general .descripcion{
+    font-size: 16px;
+    text-align: center;    
+}
+::-webkit-scrollbar {
+background: #2B2B2B;
+height:12px;
+position: relative;
+}
+::-webkit-scrollbar-thumb {
+background-color:  #009245;
 }
  /*SPEAKERS*/
 #spk-izquierda {
@@ -239,7 +290,7 @@ header {
     color: #FFF;
     display: inline-block;
     height: 200px;
-    margin: 40px 20px 0px 40px;
+    margin: 40px 24px 0px 40px;
     text-align: center;   
     width: 200px;
 }
@@ -263,7 +314,7 @@ header {
 }
 .speaker img:hover{
     
-    border-color: #678BC7;
+    border-color: #db4437;
     top: -5px;
     filter: saturate(1.0);
     -webkit-filter: saturate(1.0);
@@ -294,27 +345,96 @@ header {
  #spo-izquierda {
     top: -100%;
 }
-#spo-izquierda img{
-    left: 9%;
-    position: absolute;
-    top: 10%; 
-}
 #spo-derecha{
     left: 50%;
     top: 100%; 
+}
+.sponsors{
+    color: #FFF;
+    display: inline-block;
+    margin: 25% 24px 0px 40px;
+    text-align: center;   
+    width: 200px;
+}
+.sponsors img{
+    border-radius: 20px;
+    width: 200px;
+    position: relative;
+    filter: saturate(0.0);
+    -webkit-filter: saturate(0.0);
+    -moz-filter: saturate(0.0);
+    -o-filter: saturate(0.0);
+    -ms-filter: saturate(0.0);
+}
+.sponsors img:hover{
+    top: -10px;
+
+    filter: saturate(1.0);
+    -webkit-filter: saturate(1.0);
+    -moz-filter: saturate(1.0);
+    -o-filter: saturate(1.0);
+    -ms-filter: saturate(1.0);
+
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+.sponsors label{
+    margin-top: 20px;
 }
  /*LUGAR*/
 #lug-izquierda {
     top: -100%;
 }
-#lug-izquierda img{
+#lug-izquierda iframe{
+    border: 10px solid #db4437;/*#009245;*/
+    border-radius: 25px;
     left: 9%;
+    height: 80%;
     position: absolute;
-    top: 10%; 
+    top: 8%;
+    width: 80%; 
 }
 #lug-derecha{
     left: 50%;
     top: 100%; 
+}
+#lug-derecha .title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    position: absolute;
+    right: 26%;
+    top: 21%;
+    width: 320px;
+}
+#lug-derecha .title span {
+    color: #DBDBDB;
+    display: block;
+    font-weight: 300;
+    font-size: 55px;
+    margin-top: 10px;
+}
+#lug-derecha .line {
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: -60px center;
+    display: block;
+    margin: 30px 0 20px 0;
+    height: 40px;
+    width: 100%;
+}
+#lug-derecha .description {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    position: absolute;
+    right: 20%;
+    top: 54%;
+    width: 350px;
 }
  /*REGISTRATE*/
 #reg-izquierda {
@@ -329,7 +449,41 @@ header {
     left: 50%;
     top: 100%; 
 }
-
+#reg-derecha .title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    position: absolute;
+    right: 30%;
+    top: 21%;
+    width: 300px;
+}
+#reg-derecha .title span {
+    color: #DBDBDB;
+    display: block;
+    font-weight: 300;
+    font-size: 55px;
+    margin-top: 10px;
+}
+#reg-derecha .line {
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: -60px center;
+    display: block;
+    margin: 30px 0 20px 0;
+    height: 40px;
+    width: 100%;
+}
+#reg-derecha .description {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    position: absolute;
+    right: 20%;
+    top: 54%;
+    width: 350px;
+}
 
 
 
@@ -360,21 +514,30 @@ footer .bt_Registrate{
 
 @media screen and (max-width:1365px){
 	.contenedor{
-		height: 639px;
+		height: 790px;
 	}
 	.cont{
 	margin: 15px -4px 0px 5px;
 	}
 	.int_right{
-    right: 65px;
+    right: -41px;
     }
     .int_left{
-    right: 78px;
+    right: 93px;
     }
     #pres-izquierda img{
 	top: 15%;
-	left: -1%;
+	left: 4%;
 	}
+    #pres-derecha .description{
+        top:47%;
+    }
+    .speaker{
+        margin: 110px 7px 0px 40px;
+    }
+    .sponsors{
+        margin: 40% 0px 0px 40px;
+    }
  /*PRESENTACION*/
  /*AGENDA*/
  /*SPEAKERS*/
