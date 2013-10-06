@@ -1,10 +1,10 @@
 *{
-	margin: 0px;
+    margin: 0px;
 }
 body{
-	background: #2B2B2B;
-	font-family: Tahoma, Arial, Helvetica;
-	margin: 0px;
+    background: #2B2B2B;
+    font-family: Tahoma, Arial, Helvetica;
+    margin: 0px;
 }
 header {
     position: fixed;
@@ -145,6 +145,27 @@ header {
     position: fixed;
     width: 39%;
 }
+
+/*LOGOS*/
+#log-izquierda {
+    /*top: 45px;*/
+    top: -100%;
+}
+#log-izquierda img{
+    left: 9%;
+    position: absolute;
+    top: 10%; 
+}
+#log-derecha{
+    left: 50%;
+    top: 100%;
+}
+#log-derecha img{
+    left: 9%;
+    position: absolute;
+    top: 10%; 
+}
+
 
  /*PRESENTACION*/
 #pres-izquierda {
@@ -488,47 +509,47 @@ background-color:  #009245;
 
 
 footer{
-	background: #009245;
-	text-align: right;
-	position: absolute;
-	bottom: 0px;
-	height: 80px;
-	width: 100%;
+    background: #009245;
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
 }
 
 footer .bt_Registrate{
-	background: #F8BC00;
-	border-radius: 3px;
-	box-shadow: inset 0 40px 24px -24px #FFE000;
-	font-size: 22px;
-	/*font-weight: bold;*/
-	height: 50px;
-	line-height: 50px;
-	position: relative;
-	top: 15px;
-	left: 51%;
-	text-shadow: 0 1px 0 #FFF738;
-	text-align: center;
-	width: 180px;
+    background: #F8BC00;
+    border-radius: 3px;
+    box-shadow: inset 0 40px 24px -24px #FFE000;
+    font-size: 22px;
+    /*font-weight: bold;*/
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    top: 15px;
+    left: 51%;
+    text-shadow: 0 1px 0 #FFF738;
+    text-align: center;
+    width: 180px;
 }
 
 @media screen and (max-width:1365px){
-	.contenedor{
-		height: 790px;
-	}
-	.cont{
-	margin: 15px -4px 0px 5px;
-	}
-	.int_right{
+    .contenedor{
+        height: 790px;
+    }
+    .cont{
+    margin: 15px -4px 0px 5px;
+    }
+    .int_right{
     right: -41px;
     }
     .int_left{
     right: 93px;
     }
     #pres-izquierda img{
-	top: 15%;
-	left: 4%;
-	}
+    top: 15%;
+    left: 4%;
+    }
     #pres-derecha .description{
         top:47%;
     }
