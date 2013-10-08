@@ -16,29 +16,45 @@ header {
 }
 .logo {
     margin: 0;
-    font-size: 23px;
+    font-size: 60px;
     font-weight: 300;
-    background-image: url(../img/logo_gdg.png);
+    /*background-image: url(../img/logo_gdg.png);*/
     background-repeat: no-repeat;
     background-position: 5px center;
-    padding-left: 45px;
+    padding-left: 0px;
     height: 100%;
-    line-height: 46px;
-    width: 350px;
+    line-height: 146px;
+    width: 550px;
     position: relative;
    
     color: #666;
 }
 
+.subtext {
+    margin-top: -70px;
+    font-size: 30px;
+    font-weight: 300;
+    /*background-image: url(../img/logo_gdg.png);*/
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 0px;
+    height: 100%;
+    line-height: 76px;
+    width: 550px;
+    position: relative;
+   
+    color: #666;
+}
 
 .bar_top {
     width: 100%;
-    height: 42px;
+    height: 150px;
     background: #fff;
     border-bottom: 1px solid #BDBDBD;
+    background: url(../img/bg.png) top center repeat-x, url(../img/bottom.png) bottom center repeat-x #FFF;
 }
 .wrap_head {
-    width: 900px;
+    width: 1270px;
     margin: 0 auto;
     height: 100%;
     overflow: hidden;
@@ -46,8 +62,10 @@ header {
 
 .wrap_nav {
     width: 70%;
-    margin: 0 auto;
+    margin-left: 100px;
     position: relative;
+    margin-top: -150px;
+
 }
 .wrap_nav ul li {
     list-style: none;
@@ -68,34 +86,23 @@ header {
 .primary_nav {
     float: right;
     background: #0075bf;
+    width: 500px;
+    height: 70px;
+    margin-right: -150px;
+        border-bottom-left-radius: 100px;
+    /*box-shadow: -1px 8px 10px 1px rgba(0, 0, 0, 0.15), inset 0px -20px 10px -10px rgba(0, 214, 255, 0.15);*/
+    border-bottom-right-radius: 100px;
+
 }
-.left_nav {
-    display: block;
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-left: -40px;
-    background-image: url(../img/left_nav_bg.png);
-    background-repeat: no-repeat;
-}
-.right_nav {
-    display: block;
-    width: 48px;
-    height: 40px;
-    float: right;
-    margin-right: -48px;
-    background-image: url(../img/right_nav_bg.png);
-    background-repeat: no-repeat;
+
 }
 .primary_nav ul {
     padding-right: 10px;
     padding-left: 10px;
     overflow: hidden;
     float: left;
-    /*box-shadow: -1px 8px 10px 1px rgba(0, 0, 0, 0.15), inset 0px -20px 10px -10px rgba(0, 214, 255, 0.15);*/
-
 }
-.int_right {
+/*.int_right {
     background-image: url(../img/int_right.png);
     background-repeat: no-repeat;
     background-position: center left;
@@ -114,10 +121,10 @@ header {
     height: 42px;
     float: right;
     position: absolute;
-    right: 106px;
+    right: 196px;
     top: 0;
 }
-
+*/
 
 .left_portada {
     float: left;
@@ -152,18 +159,18 @@ header {
     top: -100%;
 }
 #log-izquierda img{
-    left: 9%;
+    left: 5%;
     position: absolute;
-    top: 10%; 
+    top: 20%; 
 }
 #log-derecha{
     left: 50%;
     top: 100%;
 }
 #log-derecha img{
-    left: 9%;
+    left: 30%;
     position: absolute;
-    top: 10%; 
+    top: 20%; 
 }
 
 
@@ -513,7 +520,7 @@ footer{
     text-align: right;
     position: absolute;
     bottom: 0px;
-    height: 80px;
+    height: 40px;
     width: 100%;
 }
 
